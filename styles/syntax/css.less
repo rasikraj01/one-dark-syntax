@@ -2,9 +2,50 @@
   // highlight properties/values if they are supported
   .syntax--property-name,
   .syntax--property-value {
-    color: @mono-2;
+    color: @hue-1;
     &.syntax--support {
-      color: @mono-1;
+      color: @hue-3;
     }
   }
+  .syntax--pseudo-element,
+  .syntax--pseudo-class{
+     color:hsl(160, 70%, 55%);
+     //color:hsl(158, 74%, 43%);
+ }
+ .syntax--quoted{
+    color:hsl(29, 73%, 57%);
+}
+ .syntax--string{
+    color:hsl(29, 73%, 57%);
+}
+
+.syntax--url{
+   color:hsl(29, 73%, 57%);
+}
+.syntax--function{
+   color:@hue-2;
+}
+.syntax--constant {
+  color: @hue-7;
+
+  &.syntax--variable {
+    color: @hue-7;
+  }
+
+  &.syntax--character.syntax--escape {
+    color: @hue-1;
+  }
+
+  &.syntax--numeric {
+    color: @hue-7;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @hue-1;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @hue-1;
+  }
+}
 }
